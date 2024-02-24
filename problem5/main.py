@@ -1,5 +1,10 @@
 def remove_duplicates(array):
-    return 0
+    unique_array = []
+    for angka in array:
+        if angka not in unique_array:
+            unique_array.append(angka)
+    return len(unique_array)
+
 
 if __name__ == '__main__':
     print(remove_duplicates([2, 3, 3, 3, 6, 9, 9])) # 4
